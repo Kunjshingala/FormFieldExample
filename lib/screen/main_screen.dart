@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:froyoss/component/box.dart';
 import 'package:froyoss/component/container.dart';
+import 'package:froyoss/component/term.dart';
 import 'package:froyoss/lists/lists.dart';
 
 class MyDesignApp extends StatefulWidget {
@@ -30,7 +31,7 @@ class _MyDesignAppState extends State<MyDesignApp> {
               Heading(
                 heading: 'Pickup Information',
               ),
-              Box(height: 10, width: double.infinity),
+              Box(height: 20, width: double.infinity),
               DropdownMenu<String>(
                 label: const Text(
                   'Packge Height',
@@ -211,7 +212,7 @@ class _MyDesignAppState extends State<MyDesignApp> {
               Heading(
                 heading: 'Package Information',
               ),
-              Box(height: 10, width: double.infinity),
+              Box(height: 20, width: double.infinity),
               DropdownMenu<String>(
                 label: const Text(
                   'I want to send',
@@ -288,12 +289,7 @@ class _MyDesignAppState extends State<MyDesignApp> {
                     },
                   ),
                   const Text('I am not sending '),
-                  const Text(
-                    'illegal items.',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )
+                  const AlertBox(),
                 ],
               ),
             ],

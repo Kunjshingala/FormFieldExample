@@ -9,8 +9,11 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(5),
+      ),
       alignment: Alignment.center,
-      color: Colors.white,
       height: 100,
       width: double.infinity,
       child: Text(
